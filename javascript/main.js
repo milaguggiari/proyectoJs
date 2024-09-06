@@ -53,7 +53,7 @@ const agregarAlCarrito = (producto) => {
         text: "Producto agregado",
         avatar: producto.img,
         duration: 3000,
-        destination: "../carrito.html",
+        destination: "./carrito.html",
         newWindow: true,
         close: true,
         gravity: "top",
