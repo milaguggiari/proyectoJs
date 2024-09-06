@@ -1,8 +1,13 @@
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-fetch("../data/productos.json")
+let productos = [];
+
+fetch("./data/productos.json")
 .then((resp) => resp.json())
-.then((data) => {mostrarProductos(data)});
+.then((data) => {
+    productos = data;
+    mostrarProductos(productos);
+})
 
 const contenedorProductos = document.querySelector("#productos");
 const carritoVacio = document.querySelector("#carrito-vacio");
