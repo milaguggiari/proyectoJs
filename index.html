@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenidos a Kampacora, la pastelería artesanal donde encontrarás deliciosos postres y productos horneados con amor. Descubre nuestra variedad de budines, tartas y galletas. Envíos disponibles en toda CABA.">
+    <meta name="keywords" content="pastelería artesanal, tortas, budines, productos dulces, galletas">
+    <title>Productos</title>
+    <link rel="icon" href="../assets/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Raleway:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Raleway:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="anteMenu">
+            <div class="titulo">
+                <div class="nombre" data-aos="fade-right">
+                    <h1>Kampacora</h1>
+                </div>
+                <div class="subtitulo" data-aos="fade-right">   
+                    <h2>La pastelería<h2>
+                </div>
+            </div>
+            <div class="carritoBoton">
+                <div class="boton">
+                    <a href="./carrito.html" class="">Carro de compras <ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+                <div class="cuenta">    
+                    <a href="" class="crearcuenta">Crear cuenta |</a>
+                    <a href="" class="iniciosesion">Inicio sesión</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navinicio">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./autor.html">Autor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./preguntas.html">Preguntas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="..." placeholder="..." aria-label="...">
+                            <button type="button" class="btn btn-secondary boton">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mainProductos">
+        <div class="seleccion"> 
+            <section class="ordenarPor">
+                <h3>Ordenar por</h3>
+                <form>
+                    <div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Menor precio</option>
+                            <option value="2">Mayor precio</option>
+                            <option value="3">Destacados</option>
+                            <option value="3">Más vistos</option>
+                          </select>
+                    </div>
+                </form>
+            </section>
+            <section class="categoriasProd">
+                <h3>Catergorías</h3>
+                <form>
+                    <div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Menor precio</option>
+                            <option value="2">Mayor precio</option>
+                            <option value="3">Destacados</option>
+                            <option value="3">Más vistos</option>
+                          </select>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <section class="articulosProd">
+            <div class="productos" id="productos">
+            </div>
+        </section>
+        <section class="seccionCarrito">
+            <a href="./carrito.html">
+                <h3 class="titulo">Carrito</h3>
+            </a>
+            <div class="carrito">
+                <div id="carrito-vacio" class="">
+                    <h4>Tu carrito está vacío</h4>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                </div>
+                <button id = "vaciar-carrito">Vaciar carrito</button>
+                <div class="carrito-total">
+                    <h3>Total: <span id="carrito-total">$0</span></h2>
+                </div>
+            </div>
+        </section>
+        <div class="textoExtra">
+            <div class="text">
+                <ion-icon name="mail-outline"></ion-icon>
+                <h4>Consultas y reservas por whatsapp</h4>
+            </div>
+            <div class="text">
+                <ion-icon name="car-outline"></ion-icon>
+                <h4>Envíos a todos CABA</h4>
+            </div>
+            <div class="text">
+                <ion-icon name="card-outline"></ion-icon>
+                <h4>10% de descuento abonando por transferencia</h4>
+            </div>
+        </div>
+    </main>
+
+    <footer class="piePagina">
+        <div class="box">
+            <h3>Kampacora</h3>
+            <p>Copyright</p> 
+        </div>
+        <div class="box">
+            <h3>Contacto</h3>
+            <p>Teléfono: 2387832398</p>
+            <p>Correo: hola@hotmail.com</p>
+        </div>
+        <div class="box">
+            <h3>Nuestras redes!</h3>
+            <div class="redes">
+                <a class="instagram" href="https://www.instagram.com/pastelderia.artesa/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://api.whatsapp.com/send?phone=56979408338" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>

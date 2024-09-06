@@ -1,0 +1,49 @@
+[
+    {
+        "id":"budin-limón",
+        "titulo": "Budin de limón",
+        "precio": 6000,
+        "img": "./assets/budinlimon.jpg"
+    },
+    {
+        "id":"budin-marmolado",
+        "titulo": "Budin marmolado",
+        "precio": 6000,
+        "img": "./assets/budinmarmolado.jpg"
+    },
+    {
+        "id":"carrotcake",
+        "titulo": "Carrotcake",
+        "precio": 30000,
+        "img": "./assets/carrotcake.jpg"
+    },
+    {
+        "id":"selvanegra",
+        "titulo": "Selva negra",
+        "precio": 30000,
+        "img": "./assets/selvanegra.jpg"
+    },
+    {
+        "id":"crumble",
+        "titulo": "Crumble de manzanas",
+        "precio": 20000,
+        "img": "./assets/crumble.jpg"
+    },
+    {
+        "id":"lemonPie",
+        "titulo": "Lemon pie",
+        "precio": 20000,
+        "img": "./assets/lemonpie.jpg"
+    },{
+        "id":"lunettes",
+        "titulo": "Galletas lunettes",
+        "precio": 8000,
+        "img": "./assets/lunettes.jpg"
+    },
+    {
+        "id":"cookies",
+        "titulo": "Galletas con chips",
+        "precio": 8000,
+        "img": "./assets/galletachips.jpg"
+    }
+]
